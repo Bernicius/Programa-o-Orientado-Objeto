@@ -1,0 +1,13 @@
+Classe Pessoa:
+A classe Pessoa define atributos básicos como nome, idade, peso e altura.
+Ela possui um construtor para inicializar esses atributos e métodos para calcular o IMC e acessar/modificar os atributos.
+
+Classe Funcionario:
+A classe Funcionario estende a classe Pessoa, o que significa que herda todos os atributos e métodos da classe Pessoa.
+
+No construtor da classe Funcionario, usamos a palavra-chave super para chamar o construtor da classe Pessoa, inicializando os atributos herdados, ou métodos de uma classe pai para ser usado em uma classe filha.
+
+Herança
+Herança: A herança permite que uma classe (subclasse) herde os atributos e métodos de outra classe (superclasse). Isso promove a reutilização de código e a criação de hierarquias de classes.
+Palavra-chave extends: Em Java, usamos a palavra-chave extends para indicar que uma classe herda de outra.
+Palavra-chave super: Usada para chamar o construtor da superclasse e inicializar os atributos herdados.
