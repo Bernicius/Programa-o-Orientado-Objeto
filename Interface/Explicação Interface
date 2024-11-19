@@ -1,0 +1,46 @@
+Em Java, uma interface é um tipo de referência que é semelhante a uma classe, mas que é usada para especificar um comportamento que as classes devem implementar. 
+Interfaces são fundamentais para a programação orientada a objetos em Java, pois permitem a definição de métodos que devem ser implementados por qualquer classe que "assine" a interface.
+
+Classe Pessoa:
+A classe Pessoa define atributos básicos como nome, idade, peso e altura.
+Ela possui um construtor para inicializar esses atributos e métodos para calcular o IMC e acessar/modificar os atributos.
+
+Interface Acessavel:
+A interface Acessavel define um contrato que inclui o método acessar().
+
+Qualquer classe que implemente esta interface deve fornecer uma implementação para o método acessar().
+
+Classe Funcionario:
+A classe Funcionario estende a classe Pessoa, herdando todos os seus atributos e métodos.
+
+Além disso, ela implementa a interface Acessavel, o que significa que deve fornecer uma implementação para o método acessar().
+No exemplo, a implementação do método acessar() simplesmente imprime uma mensagem indicando que o funcionário está acessando o sistema.
+
+Classe Visitante:
+A classe Visitante também estende a classe Pessoa, herdando todos os seus atributos e métodos.
+
+No entanto, ela não implementa a interface Acessavel, então não precisa fornecer uma implementação para o método acessar().
+
+Herança Múltipla em Java
+Java não suporta herança múltipla de classes diretamente, ou seja, uma classe não pode herdar de mais de uma classe ao mesmo tempo.
+No entanto, Java permite que uma classe implemente várias interfaces, o que proporciona uma forma de herança múltipla de comportamento. Isso é útil para definir contratos que diferentes classes podem cumprir sem compartilhar uma hierarquia de classes.
+
+Interface como Contrato
+A interface Acessavel define um contrato que qualquer classe pode implementar se precisar fornecer um método de acesso. Isso permite que apenas as classes que realmente precisam desse comportamento implementem a interface, sem forçar todas as classes na hierarquia a ter esse método.
+
+Exemplo com Funcionario e Visitante
+No seu exemplo:
+
+Classe Pessoa: Define atributos e métodos comuns a todas as pessoas, como nome, idade, peso, altura e o método calcularIMC.
+Classe Funcionario: Estende Pessoa e implementa a interface Acessavel, fornecendo uma implementação para o método acessar(). Isso significa que Funcionario pode acessar o sistema.
+Classe Visitante: Estende Pessoa, mas não implementa a interface Acessavel. Portanto, Visitante não precisa fornecer uma implementação para o método acessar() e, consequentemente, não pode acessar o sistema.
+
+Benefícios
+Flexibilidade:
+
+Usar interfaces permite que você adicione comportamentos específicos a certas classes sem afetar outras classes na hierarquia. No seu exemplo, apenas Funcionario precisa acessar o sistema, então apenas ele implementa Acessavel.
+Isolamento de Comportamento:
+Visitante não precisa acessar o sistema, então não implementa Acessavel. Se o método acessar() estivesse na classe Pessoa, todos os descendentes de Pessoa teriam que implementar esse método, mesmo que não fizesse sentido para eles.
+
+Herança Múltipla de Comportamento:
+Implementar várias interfaces permite que uma classe herde comportamentos de múltiplas fontes. Por exemplo, Funcionario poderia implementar Acessavel e outras interfaces, como Trabalhador, sem complicar a hierarquia de classes.
