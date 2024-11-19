@@ -1,0 +1,16 @@
+A sobrescrita de métodos permite que classes filhas forneçam implementações específicas para métodos definidos na classe pai. 
+Isso é útil para personalizar o comportamento herdado e garantir que cada classe filha possa agir de acordo com suas próprias necessidades.
+
+Explicação
+Classe Animal:
+A classe Animal define um método fazerSom() que imprime uma mensagem genérica.
+
+Classe Cachorro:
+A classe Cachorro estende Animal e sobrescreve o método fazerSom() para imprimir uma mensagem específica para cachorros.
+
+Classe Gato:
+A classe Gato estende Animal e sobrescreve o método fazerSom() para imprimir uma mensagem específica para gatos.
+
+Classe TesteSobrescrita:
+A classe TesteSobrescrita contém o método main onde criamos instâncias de Animal, Cachorro e Gato.
+Chamamos o método fazerSom() em cada instância para demonstrar a sobrescrita de métodos.
