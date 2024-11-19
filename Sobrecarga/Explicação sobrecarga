@@ -1,0 +1,15 @@
+A sobrecarga de métodos é uma técnica poderosa em Java que permite definir múltiplas versões de um método com o mesmo nome, mas com diferentes listas de parâmetros. 
+Isso facilita a criação de métodos que realizam tarefas semelhantes de maneira flexível e reutilizável.
+
+Explicação
+Métodos Sobrecarregados:
+A classe Calculadora possui quatro métodos somar sobrecarregados:
+Dois métodos para somar dois e três números inteiros.
+Dois métodos para somar dois e três números de ponto flutuante.
+
+Uso dos Métodos:
+No método main, criamos uma instância da classe Calculadora e chamamos os métodos somar com diferentes números e tipos de parâmetros.
+Cada chamada ao método somar invoca a versão correta do método com base nos parâmetros fornecidos.
+
+Saída:
+O programa imprime os resultados das somas, demonstrando como a sobrecarga de métodos permite a flexibilidade de usar o mesmo nome de método para diferentes operações.
